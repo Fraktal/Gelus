@@ -1,0 +1,28 @@
+#map {  
+  width:1200px;
+  border-radius: 5px;
+  padding:10px;
+  height:620px;
+  margin-top:-5px;
+  margin-left:-600px;
+  top:50%;
+  left:50%;   
+  }
+
+body {
+  font: 10px sans-serif;
+  overflow-y:scroll;
+}
+
+#chart1 {
+  height: 500px;
+  margin: 10px;
+  min-width: 100px;
+  min-height: 100px;
+/*
+  Minimum height and width is a good idea to prevent negative SVG dimensions...
+  For example width should be =< margin.left + margin.right + 1,
+  of course 1 pixel for the entire chart would not be very useful, BUT should not have errors
+*/
+}
+
