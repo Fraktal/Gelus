@@ -20,3 +20,5 @@ pip-log.txt
 .coverage
 .tox
 *.mo
+nvd3-master/
+bootstrap/
