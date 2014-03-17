@@ -19,7 +19,3 @@ def testdb():
 		return render_template('testdb.html', title='Fail!')
 
 
-@application.route('/favicon.ico')
-def favicon():
-	return send_from_directory(os.path.join(application.root_path, 'static'), 'favicon.ico',
-	                           mimetype='image/vnd.microsoft.icon')

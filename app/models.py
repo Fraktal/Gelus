@@ -6,4 +6,4 @@ class User(db.Model):
     nickname = db.Column(db.String(64), index=True, unique=True)
 
     def __repr__(self):
-        return '<User %r>' % self.nickname
+        return '<User %r>' % self.nickname 

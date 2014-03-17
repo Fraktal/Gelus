@@ -38,7 +38,7 @@ nv.addGraph(function() {
 
     d3.select("#test1")
         .datum([testdata])
-      .transition().duration(1200)
+        .transition().duration(1200)
         .attr('width', width)
         .attr('height', height)
         .call(chart);

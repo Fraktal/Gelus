@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-
+ 
 <html>
 <head><title>Gelus</title>
      <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,6 +18,7 @@
      <link rel='stylesheet' typ='text/css' href="{{url_for('static', filename ='bootstrap/css/blueimp-helper.js')}}"/>
      <link rel='stylesheet' typ='text/css' href="{{url_for('static', filename ='bootstrap/css/jquery.blueimp-gallery.js')}}"/>
      <link rel='stylesheet' typ='text/css' href="{{url_for('static', filename ='bootstrap/css/jquery.blueimp-gallery.min.js')}}"/>
+     <link rel='stylesheet' typ='text/css' href="{{url_for('static', filename ='css/nv.d3.css')}}" >
      
      <!--general css-->
      <link href="{{ url_for('static', filename="css/main.css") }}" rel="stylesheet">
@@ -27,6 +28,8 @@
 
      <!--D3.js-->
      <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+     <script src="{{url_for('static', filename='/js/d3.js')}}"></script>
+     <script src="{{url_for('static', filename='/js/d3.layout.cloud.js')}}"></script>
 
       <!--Ajax and Jquery-->
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -76,7 +79,10 @@
 
 <div id="line" class='with-3d-shadow with-transitions'>
    <svg style="height: 500px;"></svg>
-</div>
+
+  <div id="word" class='with-3d-shadow with-transitions'>
+    <svg></svg>
+  </div>
 
 
 <!--Pie Chart
@@ -105,10 +111,12 @@
 <script src="{{url_for('static', filename='nvd3-master/src/models/line.js')}}"></script>
 <script src="{{url_for('static', filename='nvd3-master/src/models/lineChart.js')}}"></script>
 
+
 <!--Charts-->
 <script src="{{ url_for('static', filename='js/bar.js')}}"></script>
 <script src="{{ url_for('static', filename='js/pie.js')}}"></script>
 <script src="{{ url_for('static', filename='js/line.js')}}"></script>
+<script src="{{ url_for('static', filename='js/word.js')}}"></script>
 
 <footer>
 <div style="text-align:center">
